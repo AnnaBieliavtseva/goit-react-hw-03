@@ -15,7 +15,8 @@
 }
 
 .contactIcon {
-  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 .deleteBtn {

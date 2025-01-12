@@ -1,0 +1,38 @@
+.contactFormContainer {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactFormInput {
+  padding: 5px;
+  font-size: 18px;
+  display: block;
+}
+
+.contactFormBtn {
+  margin: 0 auto;
+  margin-top: 15px;
+  display: block;
+  width: 120px;
+  padding: 10px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
+}
+
+.contactFormBtn:hover,
+.contactFormBtn:focus {
+  border: 1px solid rgb(0, 0, 0);
+  color: #f5f5f5;
+  background-color: rgb(5, 5, 5);
+}
+
+.errorMessage {
+  color: rgb(203, 30, 30);
+}

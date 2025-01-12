@@ -6,14 +6,14 @@ export default function Contact({ name, number }) {
     <div className={css.contactContainer}>
       <div>
         <h3 className={css.contactTitle}>
-          <span className={css.contactIcon}>
-            <FaUser />
+          <span>
+            <FaUser className={css.contactIcon} />
           </span>
           {name}
         </h3>
         <p className={css.contactText}>
-          <span className={css.contactIcon}>
-            <FaPhone />
+          <span>
+            <FaPhone className={css.contactIcon} />
           </span>
           {number}
         </p>

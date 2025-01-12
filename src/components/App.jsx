@@ -12,12 +12,18 @@ function App() {
     { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
   ]);
 
+  const addContact = newContact => {
+    setContacts(prevContacts => {
+      return [...prevContacts, newContact];
+    });
+  };
+
   return (
     <>
       <h1>Phonebook</h1>
-      <ContactForm />
+      <ContactForm onAdd={addContact} />
       <SearchBox />
-      <ContactList contacts={ contacts} />
+      <ContactList contacts={contacts} />
     </>
   );
 }
