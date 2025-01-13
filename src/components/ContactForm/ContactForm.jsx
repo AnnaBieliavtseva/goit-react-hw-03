@@ -27,7 +27,7 @@ const ContactForm = ({ onAdd }) => {
 
   const handleSubmit = (values, actions) => {
     onAdd({
-      id: values.id,
+      id: nanoid(),
       name: values.name,
       number: values.number,
     });
@@ -41,7 +41,9 @@ const ContactForm = ({ onAdd }) => {
     >
       <div className={css.contactFormContainer}>
         <Form className={css.contactForm}>
-          <label htmlFor={nameFieldId}>Name</label>
+          <label htmlFor={nameFieldId} className={css.contactFormLabel}>
+            Name
+          </label>
           <Field
             type="text"
             name="name"
@@ -53,7 +55,9 @@ const ContactForm = ({ onAdd }) => {
             component="span"
             className={css.errorMessage}
           />
-          <label htmlFor={phoneFieldId}>Number</label>
+          <label htmlFor={phoneFieldId} className={css.contactFormLabel}>
+            Number
+          </label>
           <Field
             type="text"
             name="number"
